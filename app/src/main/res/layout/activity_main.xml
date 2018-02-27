@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -57,7 +58,8 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="16dp"
                 android:text="Sesame Street 69 Babyland"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"/>
 
             <TextView
                 android:id="@+id/textViewPhone"
@@ -69,7 +71,8 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="16dp"
                 android:text="573 951 852"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"/>
 
             <TextView
                 android:id="@+id/textViewEmail"
@@ -77,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewPhone"
                 android:drawableLeft="@drawable/mail"
-
+                android:textColor="#FFFFFF"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="16dp"
                 android:text="player@gmail.com"
@@ -91,9 +94,10 @@
                 android:layout_below="@+id/textViewEmail"
                 android:drawableLeft="@drawable/clock"
                 android:textSize="20sp"
-                android:text="8.00 to last client" />
+                android:text="8.00 to last client"
+                android:textColor="#FFFFFF"/>
         </RelativeLayout>
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>
