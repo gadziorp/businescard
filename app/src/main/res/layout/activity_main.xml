@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.businescard.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewKeystone"
+            android:background="#A0A0A0"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/piano"
+            android:gravity="center_horizontal"
+            android:text="for beginners \nand \nprofessionals!"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewMusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/music" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text='new music shop \n "player"'
+                android:textAllCaps="true"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textViewAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/house"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewName"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:text="Sesame Street 69 Babyland"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAdress"
+                android:drawableLeft="@drawable/phone"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:text="573 951 852"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPhone"
+                android:drawableLeft="@drawable/mail"
+
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:text="player@gmail.com"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/textViewEmail"
+                android:drawableLeft="@drawable/clock"
+                android:textSize="20sp"
+                android:text="8.00 to last client" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
